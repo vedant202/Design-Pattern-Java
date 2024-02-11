@@ -1,0 +1,5 @@
+package com.DesignPattern.BuilderPattern;
+
+public class User {
+
+}

@@ -1,0 +1,12 @@
+package com.DesignPattern.BuilderPattern;
+
+public class Main {
+	public static void main(String[] args) {
+		User user=new User.UserBuilder()
+				.setUserId(101)
+				.setUserName("Vedant")
+				.setEmailId("vedant@gmail.com")
+				.build();
+		System.out.println(user);
+	}
+}
