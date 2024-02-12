@@ -1,0 +1,8 @@
+package com.DesignPattern.AbstractDesignPattern;
+
+public class Main {
+	public static void main(String[] args) {
+		Employee andoridDev = EmployeeFactory.getEmployee(new AndroidDevFactory());
+		System.out.println(andoridDev.salary());
+	}
+}
