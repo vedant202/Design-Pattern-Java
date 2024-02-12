@@ -1,0 +1,47 @@
+package com.DesignPattern.IteratorDesignPattern;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MyIteratorImpl implements MyIterator {
+	
+	private List<User> users = null;
+	private int length;
+	private int position;
+	
+	public MyIteratorImpl() {
+		// TODO Auto-generated constructor stub
+		users = new ArrayList<User>();
+		length = users.size();
+		position = 0;
+		
+	}
+	
+	
+	
+	public void addUser(User user) {
+		users.add(user);
+	}
+	
+	public User getUser() {
+		return users.get(position);
+	}
+	
+	
+	@Override
+	public boolean hasNext() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Object next() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+	
+
+}

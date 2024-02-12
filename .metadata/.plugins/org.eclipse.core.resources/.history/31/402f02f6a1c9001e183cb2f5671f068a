@@ -1,0 +1,7 @@
+package com.DesignPattern.IteratorDesignPattern;
+
+public class MyIteratorImpl implements MyIterator {
+	
+	
+
+}

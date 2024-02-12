@@ -1,0 +1,7 @@
+package com.DesignPattern.IteratorDesignPattern;
+
+import java.util.List;
+
+public class UserIml {
+	private List<User> users = null;
+}
