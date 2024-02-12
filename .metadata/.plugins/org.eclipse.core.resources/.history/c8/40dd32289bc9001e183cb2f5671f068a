@@ -1,0 +1,13 @@
+package com.DesignPattern.ObserverDesignPattern;
+
+public class Main {
+	public static void main(String[] args) {
+		Observer vedant = new Subscriber("Vedant");
+		Observer aryan = new Subscriber("Aryan");
+		Subject youtube = new Youtube();
+		
+		youtube.subscribe(vedant);
+		youtube.subscribe(aryan);
+		youtube.notifyVideoUploaded("Learn Next.Js");
+	}
+}

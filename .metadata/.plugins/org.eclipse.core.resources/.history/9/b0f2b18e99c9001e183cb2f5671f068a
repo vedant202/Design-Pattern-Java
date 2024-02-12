@@ -1,0 +1,7 @@
+package com.DesignPattern.ObserverDesignPattern;
+
+public interface Subject {
+	void subscribe();
+	void unsubscribe();
+	void notifyVideoUploaded();
+}
