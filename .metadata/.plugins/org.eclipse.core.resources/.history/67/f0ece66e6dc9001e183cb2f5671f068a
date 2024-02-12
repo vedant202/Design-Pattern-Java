@@ -1,0 +1,27 @@
+package com.DesignPattern.SingleTon;
+
+public class Samosa {
+	
+	private static Samosa samosa;
+	
+	private Samosa() {
+		if(samosa!=null) {
+			throw new RuntimeException("You already created samosa");
+		}
+	}
+	
+	public static Samosa getSamosa() {
+		if(samosa==null) {
+			
+			synchronized (Samosa.class) {
+				if(samosa==null) {
+					samosa = new Samosa();
+				}
+			}
+			
+			
+		}
+		return samosa;
+	}
+
+}

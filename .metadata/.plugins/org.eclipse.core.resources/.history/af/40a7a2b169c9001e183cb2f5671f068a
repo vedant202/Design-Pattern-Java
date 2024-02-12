@@ -1,0 +1,9 @@
+package com.DesignPattern.SingleTon;
+
+public enum Kachori {
+	Instace;
+	
+	public void test() {
+		System.out.println("Testing kachori enum");
+	}
+}

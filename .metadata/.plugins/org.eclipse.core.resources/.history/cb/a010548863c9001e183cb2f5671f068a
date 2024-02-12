@@ -1,0 +1,7 @@
+package com.DesignPattern.SingleTon;
+
+public class Main {
+	public static void main(String[] args) {
+		new Samosa();
+	}
+}

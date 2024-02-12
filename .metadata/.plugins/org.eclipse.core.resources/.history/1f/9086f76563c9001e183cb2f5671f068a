@@ -1,0 +1,9 @@
+package com.DesignPattern.SingleTon;
+
+public class Samosa {
+	
+	private Samosa() {
+		
+	}
+
+}

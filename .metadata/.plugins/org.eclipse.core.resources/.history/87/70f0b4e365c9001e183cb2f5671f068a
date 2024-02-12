@@ -1,0 +1,30 @@
+package com.DesignPattern.SingleTon;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+
+public class Main {
+	public static void main(String[] args) throws NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+		Samosa samosa = Samosa.getSamosa();
+		System.out.println(samosa.hashCode());
+		
+		Samosa samosa2 = Samosa.getSamosa();
+		System.out.println(samosa2.hashCode());
+		
+		//Breaking single ton pattern
+		
+//		Samosa samosa = Samosa.getSamosa();
+//		System.out.println(samosa.hashCode());
+		
+//		1. using reflection api
+		
+		
+		
+//		Constructor<Samosa> constructor=Samosa.class.getDeclaredConstructor();
+//		constructor.setAccessible(true);
+//		Samosa samosa2=constructor.newInstance();
+//		
+//		System.out.println(samosa2.hashCode());
+		
+	}
+}
