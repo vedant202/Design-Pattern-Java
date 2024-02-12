@@ -1,0 +1,16 @@
+package com.DesignPattern.PrototypeDesignPattern;
+
+public class Main {
+	public static void main(String[] args) {
+		NetworkConnection nConnection = new NetworkConnection();
+		nConnection.setIp("198:162:4:2");
+		
+		String impdata = nConnection.getNetworkConnection();
+		System.out.println(impdata);
+		nConnection.setImportantData(impdata);
+		
+		System.out.println(nConnection);
+		
+		
+	}
+}
